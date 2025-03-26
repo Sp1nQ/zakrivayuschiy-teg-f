@@ -1,0 +1,7 @@
+.picture-filter_bright {
+  filter: brightness(150%);
+}
+
+.picture-filter_dark {
+  filter: brightness(50%);
+}
