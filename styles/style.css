@@ -44,6 +44,7 @@
 
 .header_title {
   font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
+  text-decoration: none;
 }
 
 .header_subtitle {
@@ -257,7 +258,6 @@ body:has(.dialog[open]) {
   padding-block-start: 30px;
   padding-inline: 30px;
   gap: 20px;
-  overflow: hidden;
 }
 
 .dialog__text {

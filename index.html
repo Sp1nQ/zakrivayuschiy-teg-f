@@ -16,15 +16,15 @@
   <body class="page">
     <!-- Заголовок -->
     <header class="header align">
-      <h1 class="header_title">&lt;/HTML&gt;</h1>
-      <h2 class="header_subtitle">Закрывающий тег</h2>
+      <span class="header_title">&lt;/HTML&gt;</span>
+      <h1 class="header_subtitle">Закрывающий тег</h1>
     </header>
     <main class="cards align">
       <!-- Первая карточка -->
       <article class="card">
-        <h3 class="card__title">
+        <h2 class="card__title">
           Фритрек и нулевой спринт: Подготовка к работе
-        </h3>
+        </h2>
         <div class="card__image-container">
           <img
             class="card__image sepia"
@@ -597,21 +597,19 @@
           </div>
         </div>
       </article>
+      <!-- Кнопка "Сохранить" -->
+      <button
+        class="save-button button"
+        type="button"
+        onclick="window['modal'].showModal()"
+        aria-controls="modal"
+      >
+        <svg class="button__svg" viewBox="0 0 21 21" aria-hidden="true">
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
     </main>
-
-    <!-- Кнопка "Сохранить" -->
-    <button
-      class="save-button button"
-      type="button"
-      onclick="window['modal'].showModal()"
-      aria-controls="modal"
-    >
-      <svg class="button__svg" viewBox="0 0 21 21" aria-hidden="true">
-        <use href="./svg/floppy.svg#floppy" />
-      </svg>
-      <span class="button__text">Сохранить на память</span>
-    </button>
-
     <!-- Модальное окно -->
     <dialog class="dialog" id="modal">
       <div class="modal__content">
@@ -626,13 +624,11 @@
         </svg>
         <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
       </div>
-      <button
-        class="close-button button"
-        type="button"
-        onclick="window['modal'].close();"
-      >
-        <span class="button__text">Ок</span>
-      </button>
+      <form method="dialog">
+        <button class="close-button button" type="submit">
+          <span class="button__text">Ок</span>
+        </button>
+      </form>
     </dialog>
 
     <script src="./scripts/like.js"></script>
