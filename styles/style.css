@@ -230,7 +230,6 @@
   padding-block: 15px;
   min-inline-size: clamp(310px, 82%, 335px);
   background-color: #fff;
-  margin-block-start: 50px;
   margin-block-end: 103px;
 }
 
